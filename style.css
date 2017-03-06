@@ -1,0 +1,85 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/*********** nav bar ***************/
+nav{
+  margin: 30px 0;
+  height: 100px;
+  vertical-align: middle;
+}
+
+.navbar-nav li {
+  padding-left: 20px;
+  padding-right: 20px;
+  vertical-align: middle;
+}
+
+.navbar-nav li:nth-child(1) {
+  padding-left: auto;
+  padding-right: 75px;
+}
+
+.navbar-nav li:nth-child(13) {
+  padding-left: 75px;
+  padding-right: auto;
+}
+
+img.language{
+  width: 25px;
+}
+
+img.wagon{
+  width: 50px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.slashes{
+  color: grey;
+  vertical-align: middle;
+}
+
+/*********** center div with photo ***************/
+
+.photoBox {
+  background: url(./images/man.jpg) center no-repeat;
+  height: 390px;
+  border-radius: 3px;
+  padding: 0;
+}
+
+.shadow{
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  border-radius: 3px;
+  height: 390px;
+  margin: 0;
+  padding: 0;
+}
+
+.photoBox .text-intro h1{
+  margin: 0 auto;
+  padding-top: 150px;
+  width: 700px;
+  color: white;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.underlined{
+  text-decoration: underline;
+  text-decoration-color: red;
+  line-height: 0.90;
+}
+
+.photoBox .text-intro p{
+  margin: 0 auto;
+  padding-top: 40px;
+  width: 750px;
+  color: white;
+  font-size: 25px;
+}
