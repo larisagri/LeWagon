@@ -1,22 +1,32 @@
-body{
+body {
   margin: 0;
   padding: 0;
 }
 
+.container {
+  padding: 0;
+}
+a:link {
+  text-decoration: none;
+
+}
 /*********** nav bar ***************/
 nav{
   margin: 30px 0;
   height: 100px;
-  vertical-align: middle;
+  display: flex;
+}
+
+nav ul {
+  align-items: center;
 }
 
 .navbar-nav li {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 15px;
   vertical-align: middle;
 }
 
-.navbar-nav li:nth-child(1) {
+/*.navbar-nav li:nth-child(1) {
   padding-left: auto;
   padding-right: 75px;
 }
@@ -24,7 +34,7 @@ nav{
 .navbar-nav li:nth-child(13) {
   padding-left: 75px;
   padding-right: auto;
-}
+}*/
 
 img.language{
   width: 25px;
@@ -82,4 +92,46 @@ img.wagon{
   width: 750px;
   color: white;
   font-size: 25px;
+}
+
+.buttons {
+  margin-top: -20px;
+}
+
+button {
+  height: 50px;
+}
+
+.title {
+	display: flex;
+	flex-basis: 100%;
+	align-items: center;
+	margin: 40px 0px;
+}
+.title::before,
+.title::after {
+	content: "";
+	flex-grow: 1;
+	background: rgba(0, 0, 0, 0.35);
+	height: 1px;
+	font-size: 0px;
+	line-height: 0px;
+	margin: 0px 8px;
+}
+
+
+.feature-title {
+  display: flex;
+  align-content:  center;
+}
+
+.feature-title h5 {
+  margin: auto 0;
+}
+.feature-body{
+  padding: 15px 0 70px 0;
+}
+
+.go-further {
+
 }

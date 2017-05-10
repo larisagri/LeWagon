@@ -9,6 +9,7 @@
   </head>
   <body>
     <!-- NAV BAR -->
+    <div class="container">
     <nav class="navbar navbar-default navbar-toggleable-md navbar-light navbar-fixed-top">
 
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerRight" aria-controls="navbarTogglerRight" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,18 +19,21 @@
       <div class="collapse navbar-collapse" id="navbarTogglerRight">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-
-            <a href="#" class="nav-link">
+            <select class="language" name="language">
+              <option value="Francais" style="background-image: url(./images/france.png)">Francais</option>
+              <option value="English" style="background-image: url(./images/uk.jpg)">English</option>
+              <option value="Portugues" style="background-image: url(./images/brasil.png)">Portugues</option>
+            </select>
+            <!-- <a href="#" class="nav-link">
               <img src="./images/france.png" alt="France" class="language"/>
               <span class="slashes">/</span>
               <img src="./images/uk.jpg" alt="UK" class="language"/>
               <span class="slashes">/</span>
               <img src="./images/brasil.png" alt="Brasil" class="language"/>
-            </a>
+            </a> -->
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">VILLES</a>
-
           </li>
           <span class="slashes">|</span>
           <li class="nav-item">
@@ -63,7 +67,7 @@
         </ul>
       </div>
     </nav>
-
+    </div>
     <!-- CENTER PHOTO -->
     <div class="container photoBox">
       <div class="shadow"> <!-- opacity of div -->
@@ -76,16 +80,91 @@
     <!--  center buttons -->
     <div class="container buttons">
       <div class="row justify-content-md-center">
-        <div class="col-sm-6">
+        <div class="col-sm-6 d-flex justify-content-end">
           <button type="button" class="btn btn-secondary">Decouvrez nostre programme</button>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 d-flex justify-content-start">
           <button type="button" class="btn btn-danger">Postulez pour 9 semaines de formation</button>
-
         </div>
-
       </div>
-    </div>
+    </div> <!-- container buttons -->
+
+    <!-- content -->
+    <div class="container">
+      <div class="title">
+        <h3>Codez <em>the startup way</em></h3>
+      </div>
+
+      <div class="features">
+
+        <div class="row first-row">
+          <div class="col-sm-4">
+            <div class="feature-title">
+              <img src="./icons/www.png" />
+              <h5>Devenez développeur web</h5>
+            </div>
+            <div class="feature-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <span class="go-further"><a href="#">Plus d'infos</a></span></p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="feature-title">
+              <img src="./icons/r2d2.png" />
+              <h5>Comprenez la technique</h5>
+            </div>
+            <div class="feature-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="feature-title">
+              <img src="./icons/tactics.png" />
+              <h5>Adoptez le bon workflow</h5>
+            </div>
+            <div class="feature-body">
+              <p>Lorem ipsum <b>dolor sit amet</b>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div> <!--first-row -->
+
+        <div class="row second-row">
+          <div class="col-sm-4">
+            <div class="feature-title">
+              <img src="./icons/pin.png" />
+              <h5>Utilisez les outils des startups</h5>
+            </div>
+            <div class="feature-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="feature-title">
+              <img src="./icons/bookshelf.png" />
+              <h5>Codez votre produit</h5>
+            </div>
+            <div class="feature-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span class="go-further"><a href="#">Allez voir par vous-même.</a></span></p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="feature-title">
+              <img src="./icons/backpack2.png" />
+              <h5>Changez de vie</h5>
+            </div>
+            <div class="feature-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+          </div>
+        </div> <!--second-row -->
+        <div class="row lire">
+          <div class="col-sm-12">
+            <h3 class="text-center"><span class="go-further"><a href="#">Lire le programme</a></span></h3>
+          </div>
+        </div>
+      </div> <!--features -->
+
+    </div> <!--content container -->
+
 
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
